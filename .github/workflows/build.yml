@@ -5,9 +5,70 @@ on:
     paths:
       - "**"
 
+env:
+  RUST_MIN_STACK: "67108864"
+  RUST_TOOLCHAIN: "1.96.0"
+
 jobs:
   build:
-    uses: rmk-rs/rmk/.github/workflows/user_build.yml@main
-    with:
-      keyboard_toml_path: "keyboard.toml"
-      vial_json_path: "vial.json"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: dtolnay/rust-toolchain@1.96.0
+        with:
+          targets: thumbv7em-none-eabihf
+
+      - uses: cargo-bins/cargo-binstall@main
+
+      - name: Install build tools
+        run: |
+          cargo binstall cargo-make flip-link cargo-binutils -y
+
+      - name: Cache cargo registry and target
+        uses: Swatinem/rust-cache@v2
+        with:
+          key: nrf52840
+
+      - name: Build firmware
+        run: |
+          cargo build --release --bin central
+          cargo build --release --bin peripheral
+
+      - name: Create hex files (central)
+        run: |
+          cargo objcopy --release --bin central -- -O ihex asterisk-flake-central.hex
+
+      - name: Create hex files (peripheral)
+        run: |
+          cargo objcopy --release --bin peripheral -- -O ihex asterisk-flake-peripheral.hex
+
+      - name: Install uf2 converter
+        run: cargo binstall cargo-hex-to-uf2 -y
+
+      - name: Create uf2 files (central)
+        run: |
+          cargo hex-to-uf2 --input-path asterisk-flake-central.hex --output-path asterisk-flake-central.uf2 --family nrf52840
+
+      - name: Create uf2 files (peripheral)
+        run: |
+          cargo hex-to-uf2 --input-path asterisk-flake-peripheral.hex --output-path asterisk-flake-peripheral.uf2 --family nrf52840
+
+      - name: Upload uf2 artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: asterisk-flake-firmware_uf2
+          path: "*.uf2"
+
+      - name: Upload hex artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: asterisk-flake-firmware_hex
+          path: "*.hex"
+
+      - name: Upload elf artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: asterisk-flake-firmware_elf
+          path: target/thumbv7em-none-eabihf/release/central
+          # Also include peripheral ELF
