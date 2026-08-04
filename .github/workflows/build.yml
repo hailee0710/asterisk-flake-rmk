@@ -18,6 +18,7 @@ jobs:
       - uses: dtolnay/rust-toolchain@1.96.0
         with:
           targets: thumbv7em-none-eabihf
+          components: llvm-tools
 
       - uses: cargo-bins/cargo-binstall@main
 
