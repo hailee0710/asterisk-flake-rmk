@@ -1,35 +1,106 @@
 # Documentation: https://rmk.rs/docs/configuration.html
 [keyboard]
-name = "RMK Keyboard"
-product_name = "RMK Keyboard"
+name = "Asterisk Flat"
+product_name = "Asterisk Flat"
 vendor_id = 0x4c4b
 product_id = 0x4643
-manufacturer = "RMK"
-chip = "rp2040"
-
-[matrix]
-# Row and col pins are mandatory
-row_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
-col_pins = ["PIN_19", "PIN_20", "PIN_21"]
-
-# RMK uses col2row as the default matrix diode direction, if you want to use a row2col matrix, add `row2col = true`
-# row2col = true
+manufacturer = "HL"
+board = "nice!nano_v2"
 
 [layout]
-rows = 4
-cols = 3
+rows = 5
+cols = 12
+map = """
+(0,0) (0,1) (0,2) (0,3) (0,4) (0,5)  (0,6) (0,7) (0,8) (0,9) (0,10) (0,11)
+(1,0) (1,1) (1,2) (1,3) (1,4) (1,5)  (1,6) (1,7) (1,8) (1,9) (1,10) (1,11)
+(2,0) (2,1) (2,2) (2,3) (2,4) (2,5)  (2,6) (2,7) (2,8) (2,9) (2,10) (2,11)
+(3,0) (3,1) (3,2) (3,3) (3,4) (3,5)  (3,6) (3,7) (3,8) (3,9) (3,10) (3,11)
+      (4,1) (4,2) (4,3) (4,4) (4,5)  (4,6) (4,7)             (4,10) (4,11)
+"""
+
+[keymap]
 layers = 2
-keymap = [
-    [
-        ["A", "B", "C"],
-        ["Kc1", "Kc2", "Kc3"],
-        ["LCtrl", "MO(1)", "LShift"],
-        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)"]
-    ],
-    [
-        ["_", "TT(1)", "TG(2)"],
-        ["_", "_", "_"],
-        ["_", "_", "_"],
-        ["_", "_", "_"]
-    ],
+
+[[keymap.layer]]
+keys = """
+esc     Kc1   Kc2   Kc3    Kc4   Kc5      Kc6  Kc7    Kc8    Kc9  Kc0   Minus
+Tab     Q     W     E      R     T        Y    U      I      O    P     bsls
+MO(1)    A     S     D      F     G        H    J      K      L    scln  quot
+lsft    Z     X     C      V     B        N    M      Comma  Dot  slsh  Equal
+        LAlt  LGui  lctl   bspc  Enter    del  Space              lbrc  rbrc
+"""
+
+[[keymap.layer]]
+keys = """
+Grave   F1     F2          F3             F4           F5        F6     F7    F8    F9     F10  F11
+_   _  mprv  mply   mnxt       F12       _  Home  Up    End    _   _
+_   _  AudioMute       AudioVolDown  AudioVolUp  _     _  Left  Down  Right  _   _
+_   _  _       _          _        _     _  _ _    _     _   _
+        _  _       _          pscr        KeyCode::Macro0        _  _                         _   _
+"""
+
+[[behavior.macro.macros]]
+operations = [
+    { operation = "text", text = "phimmeomeo.com" }
 ]
+
+[storage]
+clear_storage = false
+
+[ble]
+enabled = true
+
+[split]
+connection = "ble"
+
+[split.central]
+rows = 0
+cols = 0
+row_offset = 0
+col_offset = 0
+
+[split.central.matrix]
+matrix_type = "normal"
+# Default diode direction is col2row; set `row2col = true` if needed.
+# row2col = true
+row_pins = []
+col_pins = []
+
+[[split.peripheral]]
+rows = 5
+cols = 6
+row_offset = 0
+col_offset = 0
+[split.peripheral.matrix]
+matrix_type = "normal"
+row_pins = ["P0_31", "P0_29", "P0_02", "P0_09", "P1_06"]
+col_pins = ["P0_11", "P0_10", "P1_13", "P1_11", "P1_15", "P1_04"]
+
+# Each peripheral owns a distinct unified-matrix region.
+[[split.peripheral]]
+rows = 5
+cols = 6
+row_offset = 0
+col_offset = 6
+[split.peripheral.matrix]
+matrix_type = "normal"
+row_pins = ["P0_06", "P0_08", "P1_04", "P1_06", "P0_31"]
+col_pins = ["P0_09", "P0_10", "P1_11", "P1_13", "P0_20", "P0_17"]
+[split.peripheral.input_device.pmw3610]
+name = "trackball0"
+
+spi.instance = "bitbang0"
+spi.sck = "P1_00"
+spi.mosi = "P0_24"
+spi.miso = "P0_11"
+spi.cs = "P0_22"
+# or spi = { instance = "bitbang0", sck = "P0_05", mosi = "P0_04", miso = "P0_04", cs = "P0_09" }
+
+# motion = "P0_02" # Optional. If omitted, the sensor is polled.
+
+force_awake = true
+smart_mode = true
+cpi = 800
+invert_x = true
+invert_y = true
+# swap_xy = true
