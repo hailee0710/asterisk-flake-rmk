@@ -1,0 +1,9 @@
+/home/hailee-nimblr/Personal/keyboards/asterisk-flake-rmk/target/release/deps/futures_macro-dd2f5dc2a67ed777.d: /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.33/src/lib.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.33/src/executor.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.33/src/join.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.33/src/select.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.33/src/stream_select.rs
+
+/home/hailee-nimblr/Personal/keyboards/asterisk-flake-rmk/target/release/deps/libfutures_macro-dd2f5dc2a67ed777.so: /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.33/src/lib.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.33/src/executor.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.33/src/join.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.33/src/select.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.33/src/stream_select.rs
+
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.33/src/lib.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.33/src/executor.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.33/src/join.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.33/src/select.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.33/src/stream_select.rs:

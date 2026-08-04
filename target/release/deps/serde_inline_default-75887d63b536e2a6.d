@@ -1,0 +1,8 @@
+/home/hailee-nimblr/Personal/keyboards/asterisk-flake-rmk/target/release/deps/serde_inline_default-75887d63b536e2a6.d: /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-inline-default-1.0.2/src/lib.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-inline-default-1.0.2/src/expand.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-inline-default-1.0.2/src/utils.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-inline-default-1.0.2/src/../README.md
+
+/home/hailee-nimblr/Personal/keyboards/asterisk-flake-rmk/target/release/deps/libserde_inline_default-75887d63b536e2a6.so: /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-inline-default-1.0.2/src/lib.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-inline-default-1.0.2/src/expand.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-inline-default-1.0.2/src/utils.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-inline-default-1.0.2/src/../README.md
+
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-inline-default-1.0.2/src/lib.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-inline-default-1.0.2/src/expand.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-inline-default-1.0.2/src/utils.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-inline-default-1.0.2/src/../README.md:

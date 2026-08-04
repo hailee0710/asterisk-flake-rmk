@@ -1,0 +1,9 @@
+/home/hailee-nimblr/Personal/keyboards/asterisk-flake-rmk/target/release/deps/bitfield_struct-ba3b760e229671ed.d: /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitfield-struct-0.13.0/src/lib.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitfield-struct-0.13.0/src/attr.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitfield-struct-0.13.0/src/bitenum.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitfield-struct-0.13.0/src/traits.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitfield-struct-0.13.0/src/../README.md
+
+/home/hailee-nimblr/Personal/keyboards/asterisk-flake-rmk/target/release/deps/libbitfield_struct-ba3b760e229671ed.so: /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitfield-struct-0.13.0/src/lib.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitfield-struct-0.13.0/src/attr.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitfield-struct-0.13.0/src/bitenum.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitfield-struct-0.13.0/src/traits.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitfield-struct-0.13.0/src/../README.md
+
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitfield-struct-0.13.0/src/lib.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitfield-struct-0.13.0/src/attr.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitfield-struct-0.13.0/src/bitenum.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitfield-struct-0.13.0/src/traits.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitfield-struct-0.13.0/src/../README.md:
