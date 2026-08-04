@@ -1,0 +1,10 @@
+/home/hailee-nimblr/Personal/keyboards/asterisk-flake-rmk/target/release/deps/cargo_toml-347a2a27e6f8eb1d.d: /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/cargo_toml.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/afs.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/error.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/inheritable.rs
+
+/home/hailee-nimblr/Personal/keyboards/asterisk-flake-rmk/target/release/deps/libcargo_toml-347a2a27e6f8eb1d.rlib: /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/cargo_toml.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/afs.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/error.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/inheritable.rs
+
+/home/hailee-nimblr/Personal/keyboards/asterisk-flake-rmk/target/release/deps/libcargo_toml-347a2a27e6f8eb1d.rmeta: /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/cargo_toml.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/afs.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/error.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/inheritable.rs
+
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/cargo_toml.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/afs.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/error.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_toml-1.0.0/src/inheritable.rs:

@@ -1,0 +1,10 @@
+/home/hailee-nimblr/Personal/keyboards/asterisk-flake-rmk/target/thumbv7em-none-eabihf/release/deps/futures_task-7af3eaced7dae447.d: /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/lib.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/spawn.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/future_obj.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/noop_waker.rs
+
+/home/hailee-nimblr/Personal/keyboards/asterisk-flake-rmk/target/thumbv7em-none-eabihf/release/deps/libfutures_task-7af3eaced7dae447.rlib: /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/lib.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/spawn.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/future_obj.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/noop_waker.rs
+
+/home/hailee-nimblr/Personal/keyboards/asterisk-flake-rmk/target/thumbv7em-none-eabihf/release/deps/libfutures_task-7af3eaced7dae447.rmeta: /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/lib.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/spawn.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/future_obj.rs /home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/noop_waker.rs
+
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/lib.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/spawn.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/future_obj.rs:
+/home/hailee-nimblr/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.33/src/noop_waker.rs:
