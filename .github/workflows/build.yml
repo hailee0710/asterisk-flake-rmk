@@ -33,15 +33,20 @@ jobs:
       - name: Build firmware
         run: |
           cargo build --release --bin central
-          cargo build --release --bin peripheral
+          cargo build --release --bin peripheral_left
+          cargo build --release --bin peripheral_right
 
       - name: Create hex files (central)
         run: |
           cargo objcopy --release --bin central -- -O ihex asterisk-flake-central.hex
 
-      - name: Create hex files (peripheral)
+      - name: Create hex files (peripheral_left)
         run: |
-          cargo objcopy --release --bin peripheral -- -O ihex asterisk-flake-peripheral.hex
+          cargo objcopy --release --bin peripheral_left -- -O ihex asterisk-flake-peripheral_left.hex
+
+      - name: Create hex files (peripheral_right)
+        run: |
+          cargo objcopy --release --bin peripheral_right -- -O ihex asterisk-flake-peripheral_right.hex
 
       - name: Install uf2 converter
         run: cargo binstall cargo-hex-to-uf2 -y
@@ -50,9 +55,13 @@ jobs:
         run: |
           cargo hex-to-uf2 --input-path asterisk-flake-central.hex --output-path asterisk-flake-central.uf2 --family nrf52840
 
-      - name: Create uf2 files (peripheral)
+      - name: Create uf2 files (peripheral_left)
         run: |
-          cargo hex-to-uf2 --input-path asterisk-flake-peripheral.hex --output-path asterisk-flake-peripheral.uf2 --family nrf52840
+          cargo hex-to-uf2 --input-path asterisk-flake-peripheral_left.hex --output-path asterisk-flake-peripheral_left.uf2 --family nrf52840
+
+      - name: Create uf2 files (peripheral_right)
+        run: |
+          cargo hex-to-uf2 --input-path asterisk-flake-peripheral_right.hex --output-path asterisk-flake-peripheral_right.uf2 --family nrf52840
 
       - name: Upload uf2 artifacts
         uses: actions/upload-artifact@v7
@@ -70,5 +79,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: asterisk-flake-firmware_elf
-          path: target/thumbv7em-none-eabihf/release/central
-          # Also include peripheral ELF
+          path: |
+            target/thumbv7em-none-eabihf/release/central
+            target/thumbv7em-none-eabihf/release/peripheral_left
+            target/thumbv7em-none-eabihf/release/peripheral_right

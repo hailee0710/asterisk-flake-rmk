@@ -34,7 +34,7 @@ Grave   F1     F2          F3             F4           F5        F6     F7    F8
 _   _  mprv  mply   mnxt       F12       _  Home  Up    End    _   _
 _   _  AudioMute       AudioVolDown  AudioVolUp  _     _  Left  Down  Right  _   _
 _   _  _       _          _        _     _  _ _    _     _   _
-        _  _       _          pscr        KeyCode::Macro0        _  _                         _   _
+        _  _       _          pscr        Macro0        _  _                         _   _
 """
 
 [[behavior.macro.macros]]
@@ -43,10 +43,16 @@ operations = [
 ]
 
 [storage]
+enabled = true
+num_sectors = 2
 clear_storage = false
 
 [ble]
 enabled = true
+
+[rmk]
+split_peripherals_num = 2
+ble_profiles_num = 3
 
 [split]
 connection = "ble"
