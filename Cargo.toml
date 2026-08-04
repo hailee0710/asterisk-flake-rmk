@@ -13,7 +13,10 @@ rmk = { version = "0.8", default-features = false, features = [
     "defmt",
     "storage",
     "vial",
+    "display",
 ] }
+oled_async = "0.2"
+display-interface-i2c = "0.5"
 nrf-sdc = { git = "https://github.com/alexmoon/nrf-sdc", rev = "11d5c3c", features = [
     "defmt",
     "peripheral",
