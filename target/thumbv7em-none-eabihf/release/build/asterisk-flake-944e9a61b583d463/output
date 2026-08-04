@@ -1,6 +1,0 @@
-cargo:rerun-if-changed=vial.json
-cargo:rustc-link-search=/home/hailee-nimblr/Personal/keyboards/asterisk-flake-rmk/target/thumbv7em-none-eabihf/release/build/asterisk-flake-944e9a61b583d463/out
-cargo:rerun-if-changed=memory.x
-cargo:rustc-link-arg=--nmagic
-cargo:rustc-link-arg=-Tlink.x
-cargo:rustc-link-arg=-Tdefmt.x

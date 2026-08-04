@@ -1,2 +1,0 @@
-warning: `[storage].num_sectors = 2` is ignored with DFU auto-calculation. The DFU layout always reserves 128 KB (32 sectors) at the end of flash. Values < 32 waste reserved space, values > 32 risk flash overflow.
-warning: `[storage].start_addr = 0xa0000` has no effect with DFU. The storage partition is automatically placed after the DFU partition.

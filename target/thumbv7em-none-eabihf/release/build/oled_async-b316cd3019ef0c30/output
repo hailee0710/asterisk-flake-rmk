@@ -1,4 +1,0 @@
-cargo:rustc-link-search=/home/hailee-nimblr/Personal/keyboards/asterisk-flake-rmk/target/thumbv7em-none-eabihf/release/build/oled_async-b316cd3019ef0c30/out
-cargo:rerun-if-changed=build.rs
-cargo:rerun-if-changed=memory.x
-cargo:rustc-link-arg-test-examples=-Tdefmt.x
