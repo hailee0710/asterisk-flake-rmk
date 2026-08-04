@@ -5,7 +5,7 @@ product_name = "Asterisk Flat"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "HL"
-chip = "nrf52840" 
+board = "nice!nano_v2"
 
 [layout]
 rows = 5
@@ -21,7 +21,7 @@ map = """
 [keymap]
 layers = 2
 
-[[keymap.layer]]
+[[layer]]
 keys = """
 esc     Kc1   Kc2   Kc3    Kc4   Kc5      Kc6  Kc7    Kc8    Kc9  Kc0   Minus
 Tab     Q     W     E      R     T        Y    U      I      O    P     bsls
@@ -30,7 +30,7 @@ lsft    Z     X     C      V     B        N    M      Comma  Dot  slsh  Equal
         LAlt  LGui  lctl   bspc  Enter    del  Space              lbrc  rbrc
 """
 
-[[keymap.layer]]
+[[layer]]
 keys = """
 Grave   F1     F2          F3             F4           F5        F6     F7    F8    F9     F10  F11
 _   _  mprv  mply   mnxt       F12       _  Home  Up    End    _   _
