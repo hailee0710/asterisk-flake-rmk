@@ -48,6 +48,8 @@ defmt = "1"
 defmt-rtt = "1"
 panic-probe = { version = "1", features = ["print-defmt"] }
 static_cell = "2"
+rand_core = "0.9"
+rand_chacha = "0.9"
 
 [build-dependencies]
 xz2 = "0.1.7"
