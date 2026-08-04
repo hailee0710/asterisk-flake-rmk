@@ -93,8 +93,9 @@ name = "trackball0"
 spi.instance = "bitbang0"
 spi.sck = "P1_00"
 spi.mosi = "P0_24"
-spi.miso = "P0_11"
+spi.miso = "P0_24"
 spi.cs = "P0_22"
+motion = "P0_11"
 
 force_awake = true
 smart_mode = true
