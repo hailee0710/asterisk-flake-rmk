@@ -65,7 +65,7 @@ operations = [
 [storage]
 enabled = true
 num_sectors = 2
-clear_storage = true
+clear_storage = false
 
 [ble]
 enabled = true
